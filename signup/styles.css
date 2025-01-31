@@ -1,0 +1,70 @@
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  background-color: #000; 
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .brand {
+  font-size: 20px;
+}
+.navbar .brand a{
+  color: #fff; 
+text-decoration: none;
+}
+
+.navbar .nav-items a {
+  margin: 0 1rem;
+  color: #fff; /* White text */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-items a:hover {
+  color: #ddd; /* Slight gray hover effect */
+}
+
+/* Form container styles */
+#signup-page{
+  padding: 30px 30px;
+}
+#signup-page h2{
+  margin-bottom: 2rem;
+}
+
+form input {
+  width: 100%; 
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #000; /* Black border on focus */
+  outline: none;
+}
+
+form button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 7px 40px;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../nav.css" /> 
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="../shop/index.html">MeShop.</a>
+      </div>
+      <div class="nav-items">
+      </div>
+    </nav>
+    <main class="form-container">
+      <h2>My Profile</h2>
+      <form>
+        <input
+          type="text"
+          id="first-name"
+          placeholder="First Name"
+          required
+          value=""
+        />
+        <input
+          type="text"
+          id="last-name"
+          placeholder="Last Name"
+          required
+        />
+
+        <button type="submit" onclick="changeDetails()">Save Info</button>
+      </form>
+    </main>
+
+    <main class="form-container">
+      <h2>Edit Password</h2>
+      <form id="change-Password-form">
+        <input
+          type="password"
+          id="old-password"
+          placeholder="Old Password"
+          required
+        />
+        <input
+          type="password"
+          id="new-password"
+          placeholder="New Password"
+          required
+        />
+        <input
+          type="password"
+          id="confirm-new-password"
+          placeholder="Confirm New Password"
+          required
+        />
+        <button type="submit" onclick="changePassword()">Change password</button>
+      </form>
+      <button type="submit" class="btn" onclick="logout()">Logout</button>
+    </main>
+
+<script src="./script.js"></script>
+  </body>
+</html>
